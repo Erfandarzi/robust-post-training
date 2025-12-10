@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the FMPT paper."
+title: "Factorized Minimax Post-Training Under Reward, Domain, and Policy Shift"
+type: software
+authors:
+  - family-names: Darzi
+    given-names: Erfan
+repository-code: "https://github.com/Erfandarzi/robust-post-training"
+license: MIT
+version: "0.1.0"

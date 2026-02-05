@@ -1,0 +1,17 @@
+model_id: Qwen/Qwen3-0.6B-Base
+method: sft
+seed: 17
+trainer: trl.SFTTrainer
+dataset:
+  manifest: data/manifests/gsm8k_math_8k.json
+  max_samples: 8000
+training:
+  learning_rate: 2.0e-5
+  num_train_epochs: 2
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 8
+  max_seq_length: 4096
+  bf16: true
+output_dir: artifacts/checkpoints/qwen3_0.6b/seed17/sft/final
+eval:
+  suites: [gsm8k_clean, math500_clean, shifted_domain_mix]

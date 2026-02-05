@@ -1,0 +1,8 @@
+model_id: Qwen/Qwen3-0.6B-Base
+method: dr_regret
+seed: 17
+init_checkpoint: artifacts/checkpoints/qwen3_0.6b/seed17/sft/final
+trainer: trl.GRPOTrainer
+robustness:
+  dr_regret_radius: 0.20
+output_dir: artifacts/checkpoints/qwen3_0.6b/seed17/dr_regret/final

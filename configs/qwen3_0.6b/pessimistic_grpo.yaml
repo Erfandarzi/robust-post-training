@@ -1,0 +1,8 @@
+model_id: Qwen/Qwen3-0.6B-Base
+method: pessimistic_grpo
+seed: 17
+init_checkpoint: artifacts/checkpoints/qwen3_0.6b/seed17/sft/final
+trainer: trl.GRPOTrainer
+robustness:
+  pessimistic_reward: true
+output_dir: artifacts/checkpoints/qwen3_0.6b/seed17/pessimistic_grpo/final

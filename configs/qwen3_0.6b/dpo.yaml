@@ -1,0 +1,21 @@
+model_id: Qwen/Qwen3-0.6B-Base
+method: dpo
+seed: 17
+init_checkpoint: artifacts/checkpoints/qwen3_0.6b/seed17/sft/final
+trainer: trl.DPOTrainer
+dataset:
+  preference_manifest: data/manifests/preference_pairs_8k.json
+training:
+  learning_rate: 5.0e-6
+  beta: 0.1
+  num_train_epochs: 1
+  per_device_train_batch_size: 2
+  gradient_accumulation_steps: 16
+  max_seq_length: 4096
+  bf16: true
+robustness:
+  rho_domain: 0.0
+  rho_evaluator: 0.0
+output_dir: artifacts/checkpoints/qwen3_0.6b/seed17/dpo/final
+eval:
+  suites: [gsm8k_clean, math500_clean, shifted_domain_mix, reward_noise_10]

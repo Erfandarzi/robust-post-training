@@ -1,0 +1,8 @@
+{
+  "name": "gsm8k_math_8k",
+  "sha256": "8c4f2a91d0e3b7c6",
+  "sources": [
+    {"name": "gsm8k", "split": "train", "samples": 5000},
+    {"name": "math", "split": "train", "samples": 3000}
+  ]
+}

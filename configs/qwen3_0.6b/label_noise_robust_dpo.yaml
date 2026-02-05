@@ -1,0 +1,8 @@
+model_id: Qwen/Qwen3-0.6B-Base
+method: label_noise_robust_dpo
+seed: 17
+init_checkpoint: artifacts/checkpoints/qwen3_0.6b/seed17/sft/final
+trainer: trl.DPOTrainer
+robustness:
+  label_noise_robust: true
+output_dir: artifacts/checkpoints/qwen3_0.6b/seed17/label_noise_robust_dpo/final

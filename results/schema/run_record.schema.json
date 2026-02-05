@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FMPTRunRecord",
+  "type": "object",
+  "required": [
+    "run_id",
+    "method",
+    "lane",
+    "seed",
+    "model_id",
+    "config_path",
+    "config_sha256",
+    "metrics"
+  ],
+  "properties": {
+    "run_id": {"type": "string"},
+    "method": {"type": "string"},
+    "lane": {"type": "string"},
+    "seed": {"type": "integer"},
+    "model_id": {"type": "string"},
+    "config_path": {"type": "string"},
+    "config_sha256": {"type": "string"},
+    "checkpoint": {"type": "string"},
+    "data_manifest_sha256": {"type": "string"},
+    "evaluator_manifest_sha256": {"type": "string"},
+    "metrics": {"type": "object"}
+  }
+}

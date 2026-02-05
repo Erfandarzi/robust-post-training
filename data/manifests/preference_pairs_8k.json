@@ -1,0 +1,6 @@
+{
+  "name": "preference_pairs_8k",
+  "sha256": "2fd91ac044b118ea",
+  "pair_policy": "correct_vs_incorrect_rollout",
+  "max_pairs_per_prompt": 1
+}

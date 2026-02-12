@@ -1,0 +1,280 @@
+{
+  "seed": 17,
+  "offline_dpo": {
+    "sft": {
+      "run_id": "qwen3_0.6b-seed17-sft",
+      "method": "sft",
+      "lane": "offline_dpo",
+      "seed": 17,
+      "model_id": "Qwen/Qwen3-0.6B-Base",
+      "config_path": "configs/qwen3_0.6b/sft.yaml",
+      "config_sha256": "72c48617b9ce9a29",
+      "checkpoint": "artifacts/checkpoints/qwen3_0.6b/seed17/sft/final",
+      "data_manifest_sha256": "8c4f2a91d0e3b7c6",
+      "evaluator_manifest_sha256": "91be02cc44a801f3",
+      "metrics": {
+        "clean_avg": 0.414,
+        "shifted_avg": 0.373,
+        "worst_domain": 0.3,
+        "worst_cell": 0.243,
+        "hack_rate": 0.036,
+        "ece": 0.184,
+        "kl": 0.0
+      }
+    },
+    "dpo": {
+      "run_id": "qwen3_0.6b-seed17-dpo",
+      "method": "dpo",
+      "lane": "offline_dpo",
+      "seed": 17,
+      "model_id": "Qwen/Qwen3-0.6B-Base",
+      "config_path": "configs/qwen3_0.6b/dpo.yaml",
+      "config_sha256": "e982631fabc19d3d",
+      "checkpoint": "artifacts/checkpoints/qwen3_0.6b/seed17/dpo/final",
+      "data_manifest_sha256": "8c4f2a91d0e3b7c6",
+      "evaluator_manifest_sha256": "91be02cc44a801f3",
+      "metrics": {
+        "clean_avg": 0.489,
+        "shifted_avg": 0.403,
+        "worst_domain": 0.314,
+        "worst_cell": 0.255,
+        "hack_rate": 0.043,
+        "ece": 0.158,
+        "kl": 0.28
+      }
+    },
+    "label_noise_robust_dpo": {
+      "run_id": "qwen3_0.6b-seed17-label_noise_robust_dpo",
+      "method": "label_noise_robust_dpo",
+      "lane": "offline_dpo",
+      "seed": 17,
+      "model_id": "Qwen/Qwen3-0.6B-Base",
+      "config_path": "configs/qwen3_0.6b/label_noise_robust_dpo.yaml",
+      "config_sha256": "b79d2f4e4e4a71f6",
+      "checkpoint": "artifacts/checkpoints/qwen3_0.6b/seed17/label_noise_robust_dpo/final",
+      "data_manifest_sha256": "8c4f2a91d0e3b7c6",
+      "evaluator_manifest_sha256": "91be02cc44a801f3",
+      "metrics": {
+        "clean_avg": 0.473,
+        "shifted_avg": 0.42,
+        "worst_domain": 0.337,
+        "worst_cell": 0.281,
+        "hack_rate": 0.04,
+        "ece": 0.151,
+        "kl": 0.31
+      }
+    },
+    "group_robust_dpo": {
+      "run_id": "qwen3_0.6b-seed17-group_robust_dpo",
+      "method": "group_robust_dpo",
+      "lane": "offline_dpo",
+      "seed": 17,
+      "model_id": "Qwen/Qwen3-0.6B-Base",
+      "config_path": "configs/qwen3_0.6b/group_robust_dpo.yaml",
+      "config_sha256": "3f2b8e0df83fe5d3",
+      "checkpoint": "artifacts/checkpoints/qwen3_0.6b/seed17/group_robust_dpo/final",
+      "data_manifest_sha256": "8c4f2a91d0e3b7c6",
+      "evaluator_manifest_sha256": "91be02cc44a801f3",
+      "metrics": {
+        "clean_avg": 0.465,
+        "shifted_avg": 0.427,
+        "worst_domain": 0.353,
+        "worst_cell": 0.294,
+        "hack_rate": 0.038,
+        "ece": 0.146,
+        "kl": 0.33
+      }
+    },
+    "dr_dpo": {
+      "run_id": "qwen3_0.6b-seed17-dr_dpo",
+      "method": "dr_dpo",
+      "lane": "offline_dpo",
+      "seed": 17,
+      "model_id": "Qwen/Qwen3-0.6B-Base",
+      "config_path": "configs/qwen3_0.6b/dr_dpo.yaml",
+      "config_sha256": "d446d0273566388a",
+      "checkpoint": "artifacts/checkpoints/qwen3_0.6b/seed17/dr_dpo/final",
+      "data_manifest_sha256": "8c4f2a91d0e3b7c6",
+      "evaluator_manifest_sha256": "91be02cc44a801f3",
+      "metrics": {
+        "clean_avg": 0.46,
+        "shifted_avg": 0.424,
+        "worst_domain": 0.346,
+        "worst_cell": 0.288,
+        "hack_rate": 0.039,
+        "ece": 0.149,
+        "kl": 0.32
+      }
+    },
+    "fm_dpo": {
+      "run_id": "qwen3_0.6b-seed17-fm_dpo",
+      "method": "fm_dpo",
+      "lane": "offline_dpo",
+      "seed": 17,
+      "model_id": "Qwen/Qwen3-0.6B-Base",
+      "config_path": "configs/qwen3_0.6b/fm_dpo.yaml",
+      "config_sha256": "2af0e5c37f1825a4",
+      "checkpoint": "artifacts/checkpoints/qwen3_0.6b/seed17/fm_dpo/final",
+      "data_manifest_sha256": "8c4f2a91d0e3b7c6",
+      "evaluator_manifest_sha256": "91be02cc44a801f3",
+      "metrics": {
+        "clean_avg": 0.471,
+        "shifted_avg": 0.433,
+        "worst_domain": 0.37,
+        "worst_cell": 0.316,
+        "hack_rate": 0.034,
+        "ece": 0.14,
+        "kl": 0.3
+      }
+    }
+  },
+  "online_grpo": {
+    "sft": {
+      "run_id": "qwen3_0.6b-seed17-sft",
+      "method": "sft",
+      "lane": "online_grpo",
+      "seed": 17,
+      "model_id": "Qwen/Qwen3-0.6B-Base",
+      "config_path": "configs/qwen3_0.6b/sft.yaml",
+      "config_sha256": "72c48617b9ce9a29",
+      "checkpoint": "artifacts/checkpoints/qwen3_0.6b/seed17/sft/final",
+      "data_manifest_sha256": "8c4f2a91d0e3b7c6",
+      "evaluator_manifest_sha256": "91be02cc44a801f3",
+      "metrics": {
+        "clean_avg": 0.414,
+        "shifted_avg": 0.373,
+        "worst_domain": 0.3,
+        "worst_cell": 0.243,
+        "proxy_gold_gap": 0.091,
+        "hack_rate": 0.036,
+        "failed_runs": 0.02
+      }
+    },
+    "grpo": {
+      "run_id": "qwen3_0.6b-seed17-grpo",
+      "method": "grpo",
+      "lane": "online_grpo",
+      "seed": 17,
+      "model_id": "Qwen/Qwen3-0.6B-Base",
+      "config_path": "configs/qwen3_0.6b/grpo.yaml",
+      "config_sha256": "de1610e3cc314cdb",
+      "checkpoint": "artifacts/checkpoints/qwen3_0.6b/seed17/grpo/final",
+      "data_manifest_sha256": "8c4f2a91d0e3b7c6",
+      "evaluator_manifest_sha256": "91be02cc44a801f3",
+      "metrics": {
+        "clean_avg": 0.523,
+        "shifted_avg": 0.44,
+        "worst_domain": 0.326,
+        "worst_cell": 0.263,
+        "proxy_gold_gap": 0.114,
+        "hack_rate": 0.069,
+        "failed_runs": 0.05
+      }
+    },
+    "prompt_groupdro": {
+      "run_id": "qwen3_0.6b-seed17-prompt_groupdro",
+      "method": "prompt_groupdro",
+      "lane": "online_grpo",
+      "seed": 17,
+      "model_id": "Qwen/Qwen3-0.6B-Base",
+      "config_path": "configs/qwen3_0.6b/prompt_groupdro.yaml",
+      "config_sha256": "c47fe3beb4ebac0f",
+      "checkpoint": "artifacts/checkpoints/qwen3_0.6b/seed17/prompt_groupdro/final",
+      "data_manifest_sha256": "8c4f2a91d0e3b7c6",
+      "evaluator_manifest_sha256": "91be02cc44a801f3",
+      "metrics": {
+        "clean_avg": 0.51,
+        "shifted_avg": 0.451,
+        "worst_domain": 0.349,
+        "worst_cell": 0.286,
+        "proxy_gold_gap": 0.1,
+        "hack_rate": 0.056,
+        "failed_runs": 0.04
+      }
+    },
+    "dr_regret": {
+      "run_id": "qwen3_0.6b-seed17-dr_regret",
+      "method": "dr_regret",
+      "lane": "online_grpo",
+      "seed": 17,
+      "model_id": "Qwen/Qwen3-0.6B-Base",
+      "config_path": "configs/qwen3_0.6b/dr_regret.yaml",
+      "config_sha256": "c2c174f0ae057d86",
+      "checkpoint": "artifacts/checkpoints/qwen3_0.6b/seed17/dr_regret/final",
+      "data_manifest_sha256": "8c4f2a91d0e3b7c6",
+      "evaluator_manifest_sha256": "91be02cc44a801f3",
+      "metrics": {
+        "clean_avg": 0.504,
+        "shifted_avg": 0.447,
+        "worst_domain": 0.343,
+        "worst_cell": 0.28,
+        "proxy_gold_gap": 0.097,
+        "hack_rate": 0.053,
+        "failed_runs": 0.04
+      }
+    },
+    "pessimistic_grpo": {
+      "run_id": "qwen3_0.6b-seed17-pessimistic_grpo",
+      "method": "pessimistic_grpo",
+      "lane": "online_grpo",
+      "seed": 17,
+      "model_id": "Qwen/Qwen3-0.6B-Base",
+      "config_path": "configs/qwen3_0.6b/pessimistic_grpo.yaml",
+      "config_sha256": "2a3ea804db519bd0",
+      "checkpoint": "artifacts/checkpoints/qwen3_0.6b/seed17/pessimistic_grpo/final",
+      "data_manifest_sha256": "8c4f2a91d0e3b7c6",
+      "evaluator_manifest_sha256": "91be02cc44a801f3",
+      "metrics": {
+        "clean_avg": 0.497,
+        "shifted_avg": 0.454,
+        "worst_domain": 0.358,
+        "worst_cell": 0.293,
+        "proxy_gold_gap": 0.09,
+        "hack_rate": 0.05,
+        "failed_runs": 0.03
+      }
+    },
+    "noisy_corrected_grpo": {
+      "run_id": "qwen3_0.6b-seed17-noisy_corrected_grpo",
+      "method": "noisy_corrected_grpo",
+      "lane": "online_grpo",
+      "seed": 17,
+      "model_id": "Qwen/Qwen3-0.6B-Base",
+      "config_path": "configs/qwen3_0.6b/noisy_corrected_grpo.yaml",
+      "config_sha256": "2d2be8bf4ca78de2",
+      "checkpoint": "artifacts/checkpoints/qwen3_0.6b/seed17/noisy_corrected_grpo/final",
+      "data_manifest_sha256": "8c4f2a91d0e3b7c6",
+      "evaluator_manifest_sha256": "91be02cc44a801f3",
+      "metrics": {
+        "clean_avg": 0.501,
+        "shifted_avg": 0.449,
+        "worst_domain": 0.34,
+        "worst_cell": 0.278,
+        "proxy_gold_gap": 0.093,
+        "hack_rate": 0.048,
+        "failed_runs": 0.03
+      }
+    },
+    "fm_grpo": {
+      "run_id": "qwen3_0.6b-seed17-fm_grpo",
+      "method": "fm_grpo",
+      "lane": "online_grpo",
+      "seed": 17,
+      "model_id": "Qwen/Qwen3-0.6B-Base",
+      "config_path": "configs/qwen3_0.6b/fm_grpo.yaml",
+      "config_sha256": "2c7fb7204ed8facb",
+      "checkpoint": "artifacts/checkpoints/qwen3_0.6b/seed17/fm_grpo/final",
+      "data_manifest_sha256": "8c4f2a91d0e3b7c6",
+      "evaluator_manifest_sha256": "91be02cc44a801f3",
+      "metrics": {
+        "clean_avg": 0.514,
+        "shifted_avg": 0.46,
+        "worst_domain": 0.373,
+        "worst_cell": 0.309,
+        "proxy_gold_gap": 0.081,
+        "hack_rate": 0.043,
+        "failed_runs": 0.03
+      }
+    }
+  }
+}

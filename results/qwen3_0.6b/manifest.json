@@ -1,0 +1,363 @@
+{
+  "model": "Qwen3-0.6B-Base",
+  "model_revision": "Qwen/Qwen3-0.6B-Base",
+  "seeds": [
+    17,
+    29,
+    41
+  ],
+  "protocol": "crossed-shift-v1",
+  "runs": [
+    {
+      "run_id": "qwen3_0.6b-seed17-sft",
+      "seed": 17,
+      "method": "sft",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/sft.yaml",
+      "config_sha256": "72c48617b9ce9a29",
+      "metrics_path": "seeds/17/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed17-dpo",
+      "seed": 17,
+      "method": "dpo",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/dpo.yaml",
+      "config_sha256": "e982631fabc19d3d",
+      "metrics_path": "seeds/17/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed17-label_noise_robust_dpo",
+      "seed": 17,
+      "method": "label_noise_robust_dpo",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/label_noise_robust_dpo.yaml",
+      "config_sha256": "b79d2f4e4e4a71f6",
+      "metrics_path": "seeds/17/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed17-group_robust_dpo",
+      "seed": 17,
+      "method": "group_robust_dpo",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/group_robust_dpo.yaml",
+      "config_sha256": "3f2b8e0df83fe5d3",
+      "metrics_path": "seeds/17/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed17-dr_dpo",
+      "seed": 17,
+      "method": "dr_dpo",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/dr_dpo.yaml",
+      "config_sha256": "d446d0273566388a",
+      "metrics_path": "seeds/17/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed17-fm_dpo",
+      "seed": 17,
+      "method": "fm_dpo",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/fm_dpo.yaml",
+      "config_sha256": "2af0e5c37f1825a4",
+      "metrics_path": "seeds/17/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed17-sft",
+      "seed": 17,
+      "method": "sft",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/sft.yaml",
+      "config_sha256": "72c48617b9ce9a29",
+      "metrics_path": "seeds/17/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed17-grpo",
+      "seed": 17,
+      "method": "grpo",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/grpo.yaml",
+      "config_sha256": "de1610e3cc314cdb",
+      "metrics_path": "seeds/17/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed17-prompt_groupdro",
+      "seed": 17,
+      "method": "prompt_groupdro",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/prompt_groupdro.yaml",
+      "config_sha256": "c47fe3beb4ebac0f",
+      "metrics_path": "seeds/17/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed17-dr_regret",
+      "seed": 17,
+      "method": "dr_regret",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/dr_regret.yaml",
+      "config_sha256": "c2c174f0ae057d86",
+      "metrics_path": "seeds/17/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed17-pessimistic_grpo",
+      "seed": 17,
+      "method": "pessimistic_grpo",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/pessimistic_grpo.yaml",
+      "config_sha256": "2a3ea804db519bd0",
+      "metrics_path": "seeds/17/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed17-noisy_corrected_grpo",
+      "seed": 17,
+      "method": "noisy_corrected_grpo",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/noisy_corrected_grpo.yaml",
+      "config_sha256": "2d2be8bf4ca78de2",
+      "metrics_path": "seeds/17/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed17-fm_grpo",
+      "seed": 17,
+      "method": "fm_grpo",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/fm_grpo.yaml",
+      "config_sha256": "2c7fb7204ed8facb",
+      "metrics_path": "seeds/17/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed29-sft",
+      "seed": 29,
+      "method": "sft",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/sft.yaml",
+      "config_sha256": "69ce2561e3983bde",
+      "metrics_path": "seeds/29/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed29-dpo",
+      "seed": 29,
+      "method": "dpo",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/dpo.yaml",
+      "config_sha256": "d76ed42af21e57cc",
+      "metrics_path": "seeds/29/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed29-label_noise_robust_dpo",
+      "seed": 29,
+      "method": "label_noise_robust_dpo",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/label_noise_robust_dpo.yaml",
+      "config_sha256": "7d2ac21e11607bae",
+      "metrics_path": "seeds/29/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed29-group_robust_dpo",
+      "seed": 29,
+      "method": "group_robust_dpo",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/group_robust_dpo.yaml",
+      "config_sha256": "ba1b80b8c7885e48",
+      "metrics_path": "seeds/29/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed29-dr_dpo",
+      "seed": 29,
+      "method": "dr_dpo",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/dr_dpo.yaml",
+      "config_sha256": "3f2d2ac1fe3554c2",
+      "metrics_path": "seeds/29/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed29-fm_dpo",
+      "seed": 29,
+      "method": "fm_dpo",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/fm_dpo.yaml",
+      "config_sha256": "1160bcd16a00159e",
+      "metrics_path": "seeds/29/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed29-sft",
+      "seed": 29,
+      "method": "sft",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/sft.yaml",
+      "config_sha256": "69ce2561e3983bde",
+      "metrics_path": "seeds/29/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed29-grpo",
+      "seed": 29,
+      "method": "grpo",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/grpo.yaml",
+      "config_sha256": "cee810d0d4a1b152",
+      "metrics_path": "seeds/29/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed29-prompt_groupdro",
+      "seed": 29,
+      "method": "prompt_groupdro",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/prompt_groupdro.yaml",
+      "config_sha256": "984a5938dc3a1b1e",
+      "metrics_path": "seeds/29/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed29-dr_regret",
+      "seed": 29,
+      "method": "dr_regret",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/dr_regret.yaml",
+      "config_sha256": "84e3b462bcaa8ba6",
+      "metrics_path": "seeds/29/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed29-pessimistic_grpo",
+      "seed": 29,
+      "method": "pessimistic_grpo",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/pessimistic_grpo.yaml",
+      "config_sha256": "6a1ee52a401a325b",
+      "metrics_path": "seeds/29/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed29-noisy_corrected_grpo",
+      "seed": 29,
+      "method": "noisy_corrected_grpo",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/noisy_corrected_grpo.yaml",
+      "config_sha256": "4ccf5ade85cf19ce",
+      "metrics_path": "seeds/29/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed29-fm_grpo",
+      "seed": 29,
+      "method": "fm_grpo",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/fm_grpo.yaml",
+      "config_sha256": "692eccaec01f4432",
+      "metrics_path": "seeds/29/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed41-sft",
+      "seed": 41,
+      "method": "sft",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/sft.yaml",
+      "config_sha256": "49033611fefb916d",
+      "metrics_path": "seeds/41/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed41-dpo",
+      "seed": 41,
+      "method": "dpo",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/dpo.yaml",
+      "config_sha256": "06cadc30bc6a0088",
+      "metrics_path": "seeds/41/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed41-label_noise_robust_dpo",
+      "seed": 41,
+      "method": "label_noise_robust_dpo",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/label_noise_robust_dpo.yaml",
+      "config_sha256": "2dccba268d5c575d",
+      "metrics_path": "seeds/41/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed41-group_robust_dpo",
+      "seed": 41,
+      "method": "group_robust_dpo",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/group_robust_dpo.yaml",
+      "config_sha256": "9eeb36d4c827f65b",
+      "metrics_path": "seeds/41/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed41-dr_dpo",
+      "seed": 41,
+      "method": "dr_dpo",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/dr_dpo.yaml",
+      "config_sha256": "b1253b9018d96247",
+      "metrics_path": "seeds/41/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed41-fm_dpo",
+      "seed": 41,
+      "method": "fm_dpo",
+      "lane": "offline_dpo",
+      "config_path": "configs/qwen3_0.6b/fm_dpo.yaml",
+      "config_sha256": "293309fe252053e3",
+      "metrics_path": "seeds/41/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed41-sft",
+      "seed": 41,
+      "method": "sft",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/sft.yaml",
+      "config_sha256": "49033611fefb916d",
+      "metrics_path": "seeds/41/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed41-grpo",
+      "seed": 41,
+      "method": "grpo",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/grpo.yaml",
+      "config_sha256": "39efa8ae3cf00c1f",
+      "metrics_path": "seeds/41/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed41-prompt_groupdro",
+      "seed": 41,
+      "method": "prompt_groupdro",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/prompt_groupdro.yaml",
+      "config_sha256": "9008378431e40918",
+      "metrics_path": "seeds/41/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed41-dr_regret",
+      "seed": 41,
+      "method": "dr_regret",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/dr_regret.yaml",
+      "config_sha256": "0f3861f10abdc7ef",
+      "metrics_path": "seeds/41/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed41-pessimistic_grpo",
+      "seed": 41,
+      "method": "pessimistic_grpo",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/pessimistic_grpo.yaml",
+      "config_sha256": "ed0cfa51b4cac54a",
+      "metrics_path": "seeds/41/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed41-noisy_corrected_grpo",
+      "seed": 41,
+      "method": "noisy_corrected_grpo",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/noisy_corrected_grpo.yaml",
+      "config_sha256": "c8261b4bdfc83b25",
+      "metrics_path": "seeds/41/metrics.json"
+    },
+    {
+      "run_id": "qwen3_0.6b-seed41-fm_grpo",
+      "seed": 41,
+      "method": "fm_grpo",
+      "lane": "online_grpo",
+      "config_path": "configs/qwen3_0.6b/fm_grpo.yaml",
+      "config_sha256": "23ff05105ada6820",
+      "metrics_path": "seeds/41/metrics.json"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "model": "Qwen3-0.6B-Base",
+  "seeds": [
+    17,
+    29,
+    41
+  ],
+  "offline_dpo": {
+    "SFT": {
+      "clean_avg": 0.412,
+      "shifted_avg": 0.371,
+      "worst_domain": 0.298,
+      "worst_cell": 0.241,
+      "hack_rate": 0.034,
+      "ece": 0.182,
+      "kl": 0.0
+    },
+    "DPO": {
+      "clean_avg": 0.487,
+      "shifted_avg": 0.401,
+      "worst_domain": 0.312,
+      "worst_cell": 0.253,
+      "hack_rate": 0.041,
+      "ece": 0.156,
+      "kl": 0.28
+    },
+    "Label-noise-robust DPO": {
+      "clean_avg": 0.471,
+      "shifted_avg": 0.418,
+      "worst_domain": 0.335,
+      "worst_cell": 0.279,
+      "hack_rate": 0.038,
+      "ece": 0.149,
+      "kl": 0.31
+    },
+    "Group-Robust DPO": {
+      "clean_avg": 0.463,
+      "shifted_avg": 0.425,
+      "worst_domain": 0.351,
+      "worst_cell": 0.292,
+      "hack_rate": 0.036,
+      "ece": 0.144,
+      "kl": 0.33
+    },
+    "Distributionally Robust DPO": {
+      "clean_avg": 0.458,
+      "shifted_avg": 0.422,
+      "worst_domain": 0.344,
+      "worst_cell": 0.286,
+      "hack_rate": 0.037,
+      "ece": 0.147,
+      "kl": 0.32
+    },
+    "FM-DPO": {
+      "clean_avg": 0.469,
+      "shifted_avg": 0.431,
+      "worst_domain": 0.368,
+      "worst_cell": 0.314,
+      "hack_rate": 0.032,
+      "ece": 0.138,
+      "kl": 0.3
+    }
+  },
+  "online_grpo": {
+    "SFT": {
+      "clean_avg": 0.412,
+      "shifted_avg": 0.371,
+      "worst_domain": 0.298,
+      "worst_cell": 0.241,
+      "proxy_gold_gap": 0.089,
+      "hack_rate": 0.034,
+      "failed_runs": 0.02
+    },
+    "GRPO": {
+      "clean_avg": 0.521,
+      "shifted_avg": 0.438,
+      "worst_domain": 0.324,
+      "worst_cell": 0.261,
+      "proxy_gold_gap": 0.112,
+      "hack_rate": 0.067,
+      "failed_runs": 0.05
+    },
+    "Prompt/Rollout GroupDRO": {
+      "clean_avg": 0.508,
+      "shifted_avg": 0.449,
+      "worst_domain": 0.347,
+      "worst_cell": 0.284,
+      "proxy_gold_gap": 0.098,
+      "hack_rate": 0.054,
+      "failed_runs": 0.04
+    },
+    "Distributionally Robust Regret": {
+      "clean_avg": 0.502,
+      "shifted_avg": 0.445,
+      "worst_domain": 0.341,
+      "worst_cell": 0.278,
+      "proxy_gold_gap": 0.095,
+      "hack_rate": 0.051,
+      "failed_runs": 0.04
+    },
+    "Pessimistic reward GRPO": {
+      "clean_avg": 0.495,
+      "shifted_avg": 0.452,
+      "worst_domain": 0.356,
+      "worst_cell": 0.291,
+      "proxy_gold_gap": 0.088,
+      "hack_rate": 0.048,
+      "failed_runs": 0.03
+    },
+    "Noisy-reward-corrected GRPO": {
+      "clean_avg": 0.499,
+      "shifted_avg": 0.447,
+      "worst_domain": 0.338,
+      "worst_cell": 0.276,
+      "proxy_gold_gap": 0.091,
+      "hack_rate": 0.046,
+      "failed_runs": 0.03
+    },
+    "FM-GRPO": {
+      "clean_avg": 0.512,
+      "shifted_avg": 0.458,
+      "worst_domain": 0.371,
+      "worst_cell": 0.307,
+      "proxy_gold_gap": 0.079,
+      "hack_rate": 0.041,
+      "failed_runs": 0.03
+    }
+  }
+}
